@@ -1,11 +1,12 @@
 // Colores para el fondo
 const colors = ["#f7f9fc", "#ffe5e5", "#e5ffe5", "#e5e5ff", "#fff3e0"];
+const colorsShadow = ["#0065fdff", "#ff0000ff", "#00ff00ff", "#0000ffff", "#ff9d00ff"];
 let colorIndex = 0;
 
 // Datos de los integrantes
 const members = [
     { photo: "images/emilio.jpg", desc: "Alumno 1 - Emilio Francisco Vázquez Pérez" },
-    { photo: "images/alumno2.jpg", desc: "Alumno 2 - Descripción detallada del segundo alumno." },
+    { photo: "images/alumno2.jpg", desc: "Alumno 2 - Sergio Cortes Naranjo" },
 ];
 let memberIndex = 0;
 
@@ -36,6 +37,7 @@ function updateButtonText() {
 // Botón cambio de color
 colorButton.addEventListener("click", () => {
     document.body.style.backgroundColor = colors[colorIndex];
+    document.getElementById("member-photo").style.borderColor = colorsShadow[colorIndex];
     colorIndex = (colorIndex + 1) % colors.length;
 });
 

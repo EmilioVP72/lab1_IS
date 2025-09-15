@@ -3,6 +3,7 @@
   --secondary-color: #f7f9fc;
   --text-color: #333;
   --card-bg: #ffffff;
+  --shadow-card: #32c0c5;
   --transition-speed: 0.5s;
 }
 
@@ -41,14 +42,14 @@ h1 {
   background-color: var(--card-bg);
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   margin: 0 auto;
   transition: box-shadow var(--transition-speed) ease-in-out;
 }
 
 .member-card:hover {
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 25px var(--shadow-card);
 }
 
 #member-photo {
@@ -59,6 +60,10 @@ h1 {
   border: 4px solid var(--primary-color);
   margin: 15px 0;
   transition: transform var(--transition-speed) ease-in-out, opacity var(--transition-speed) ease-in-out;
+}
+
+#member-photo:hover{
+  transform: scale(1.2);
 }
 
 #member-desc {
