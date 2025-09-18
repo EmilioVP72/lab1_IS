@@ -2,11 +2,10 @@
 const colors = ["#f7f9fc", "#ffe5e5", "#e5ffe5", "#e5e5ff", "#fff3e0"];
 const colorsShadow = ["#0065fdff", "#ff0000ff", "#00ff00ff", "#0000ffff", "#ff9d00ff"];
 let colorIndex = 0;
-
-// Datos de los integrantes
+//informacion
 const members = [
     { photo: "images/emilio.jpg", desc: "Alumno 1 - Emilio Francisco Vázquez Pérez" },
-    { photo: "images/alumno2.jpg", desc: "Alumno 2 - Sergio Cortes Naranjo" },
+    { photo: "images/sergio.jpg", desc: "Alumno 2 - Sergio Cortes Naranjo" },
 ];
 let memberIndex = 0;
 
